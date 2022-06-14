@@ -1,188 +1,65 @@
 <template>
-  <div>
-    <div
-      class="
-        d-flex
-        justify-content-between
-        flex-wrap flex-md-nowrap
-        align-items-center
-        pt-3
-        pb-2
-        mb-3
-        border-bottom
-      "
-    >
-      <h1 class="h2">Home</h1>
-      <!--
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group me-2">
-                <button type="button" class="btn btn-sm btn-outline-secondary">
-                  Share
-                </button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">
-                  Export
-                </button>
-              </div>
-              <button
-                type="button"
-                class="btn btn-sm btn-outline-secondary dropdown-toggle"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-calendar align-text-bottom"
-                  aria-hidden="true"
-                >
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                  <line x1="16" y1="2" x2="16" y2="6"></line>
-                  <line x1="8" y1="2" x2="8" y2="6"></line>
-                  <line x1="3" y1="10" x2="21" y2="10"></line>
-                </svg>
-                This week
-              </button>
-            </div>-->
+      <div>
+          <div
+            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
+          >
+            <h1 class="h2">Dashboard</h1>
+
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Free</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>10 users included</li>
+              <li>2 GB of storage</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>20 users included</li>
+              <li>10 GB of storage</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-white bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <h2>Storage items</h2>
-    <div class="table-responsive">
-      <table class="table table-striped table-sm">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Header</th>
-            <th scope="col">Header</th>
-            <th scope="col">Header</th>
-            <th scope="col">Header</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1,001</td>
-            <td>random</td>
-            <td>data</td>
-            <td>placeholder</td>
-            <td>text</td>
-          </tr>
-          <tr>
-            <td>1,002</td>
-            <td>placeholder</td>
-            <td>irrelevant</td>
-            <td>visual</td>
-            <td>layout</td>
-          </tr>
-          <tr>
-            <td>1,003</td>
-            <td>data</td>
-            <td>rich</td>
-            <td>dashboard</td>
-            <td>tabular</td>
-          </tr>
-          <tr>
-            <td>1,003</td>
-            <td>information</td>
-            <td>placeholder</td>
-            <td>illustrative</td>
-            <td>data</td>
-          </tr>
-          <tr>
-            <td>1,004</td>
-            <td>text</td>
-            <td>random</td>
-            <td>layout</td>
-            <td>dashboard</td>
-          </tr>
-          <tr>
-            <td>1,005</td>
-            <td>dashboard</td>
-            <td>irrelevant</td>
-            <td>text</td>
-            <td>placeholder</td>
-          </tr>
-          <tr>
-            <td>1,006</td>
-            <td>dashboard</td>
-            <td>illustrative</td>
-            <td>rich</td>
-            <td>data</td>
-          </tr>
-          <tr>
-            <td>1,007</td>
-            <td>placeholder</td>
-            <td>tabular</td>
-            <td>information</td>
-            <td>irrelevant</td>
-          </tr>
-          <tr>
-            <td>1,008</td>
-            <td>random</td>
-            <td>data</td>
-            <td>placeholder</td>
-            <td>text</td>
-          </tr>
-          <tr>
-            <td>1,009</td>
-            <td>placeholder</td>
-            <td>irrelevant</td>
-            <td>visual</td>
-            <td>layout</td>
-          </tr>
-          <tr>
-            <td>1,010</td>
-            <td>data</td>
-            <td>rich</td>
-            <td>dashboard</td>
-            <td>tabular</td>
-          </tr>
-          <tr>
-            <td>1,011</td>
-            <td>information</td>
-            <td>placeholder</td>
-            <td>illustrative</td>
-            <td>data</td>
-          </tr>
-          <tr>
-            <td>1,012</td>
-            <td>text</td>
-            <td>placeholder</td>
-            <td>layout</td>
-            <td>dashboard</td>
-          </tr>
-          <tr>
-            <td>1,013</td>
-            <td>dashboard</td>
-            <td>irrelevant</td>
-            <td>text</td>
-            <td>visual</td>
-          </tr>
-          <tr>
-            <td>1,014</td>
-            <td>dashboard</td>
-            <td>illustrative</td>
-            <td>rich</td>
-            <td>data</td>
-          </tr>
-          <tr>
-            <td>1,015</td>
-            <td>random</td>
-            <td>tabular</td>
-            <td>information</td>
-            <td>text</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
   </div>
 </template>
-
-<script>
-export default {};
-</script>
-
-<style></style>

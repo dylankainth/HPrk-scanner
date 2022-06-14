@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Nuxt Starter',
+    title: 'Technology Asset Tracker',
     htmlAttrs: {
       lang: 'en',
     },
@@ -11,6 +11,9 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [
+      {rel:"preconnect",href:"https://fonts.googleapis.com"},
+      {rel:"preconnect",href:"https://fonts.gstatic.com"},
+      { href:"https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap",rel:"stylesheet"},
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css',
@@ -25,6 +28,7 @@ export default {
       },
     ],
     script: [
+      {src:"https://unpkg.com/feather-icons"},
       {
         src: 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js',
         integrity:
