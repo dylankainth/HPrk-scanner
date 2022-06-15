@@ -38,6 +38,10 @@ export default {
     ],
   },
 
+  serverMiddleware: [
+    { path: "/api", handler: "~/api/index.js" },
+  ],
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
