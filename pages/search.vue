@@ -1,5 +1,5 @@
 <template>
-  <p>list</p>
+  <p>search</p>
 </template>
 
 <script>

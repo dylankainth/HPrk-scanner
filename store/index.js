@@ -2,7 +2,7 @@ export const state = () => ({
   routes : {
     'Discover' : {
       '/': {'name':'Dashboard', 'icon':'home'},
-      '/list': {'name':'List','icon':'list'},
+      '/search': {'name':'Search','icon':'search'},
     },
     'Edit': {
       '/add': {'name':'Add Asset','icon':'file-plus'},

@@ -10,7 +10,7 @@
          <div
             class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
           >
-            <h1 class="h2">{{ name }}</h1>
+            <h1 class="h2 title">{{ name }}</h1>
 
           </div>
 
@@ -29,7 +29,10 @@
 .body {
   font-size: 0.875rem;
 }
-
+.title {
+  /* text-transform: uppercase; */
+  font-weight: 500
+}
 .feather {
   width: 16px;
   height: 16px;
