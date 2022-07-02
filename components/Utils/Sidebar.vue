@@ -4,44 +4,27 @@
     class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
   >
     <div class="position-sticky top-0 start-0 pt-3">
-      <h6
+      <div v-for="(directory, name) in routes" v-bind:key="name">
+        <h6
         class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase"
-      >
-        <span>Discover</span>
-      </h6>
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <nuxt-link class="nav-link" aria-current="page" to="/">
-            <i data-feather="home"></i>
-            Dashboard
+        >
+          <span>{{name}}</span>
+        </h6>
+
+        <ul class="nav flex-column">
+          
+        <li class="nav-item" v-for="(key,value) in directory" v-bind:key="key.name">
+          <nuxt-link class="nav-link" aria-current="page" :to="value">
+            <i :data-feather="key.icon"></i>
+            {{key.name}}
+            
           </nuxt-link>
         </li>
-        <li class="nav-item">
-          <nuxt-link class="nav-link" to="list">
-            <i data-feather="list"></i>
-            List
-          </nuxt-link>
-        </li>
+      
       </ul>
-      <h6
-        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase"
-      >
-        <span>Edit</span>
-      </h6>
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <nuxt-link class="nav-link" to="add">
-            <i data-feather="file-plus"></i>
-            Add Asset
-          </nuxt-link>
-        </li>
-        <li class="nav-item">
-          <nuxt-link class="nav-link" to="remove">
-            <i data-feather="file-minus"></i>
-            Remove Asset
-          </nuxt-link>
-        </li>
-      </ul>
+
+      </div>
+     
     </div>
     <div class="position-absolute bottom-0 start-0 p-3 text-secondary">
       <p>
@@ -66,6 +49,12 @@ export default {
   mounted() {
     feather.replace();
   },
+  data(){
+    return {
+      routes : this.$store.state.routes
+    }
+  }
+
 };
 </script>
 
@@ -88,11 +77,11 @@ export default {
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 767.98px) {
+/* @media (max-width: 767.98px) {
   .sidebar {
     top: 5rem;
   }
-}
+} */
 
 .sidebar-sticky {
   position: relative;
