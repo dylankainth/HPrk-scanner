@@ -1,26 +1,12 @@
-# Use root/example as user/password credentials
-version: '3.1'
-
+version: "3"
 services:
-
-  mongo:
-    image: mongo
-    restart: always
+  front:
+    image: node:7-slim
+    working_dir: "/"
     environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: example
+      - HOST=0.0.0.0
+    ports:
+      - "80:3000"
     volumes:
-    - /workspaces/HPrk-scanner/db:/app
-    ports:
-      - "27017:27017"
-  
-
-  mongo-express:
-    image: mongo-express
-    restart: always
-    ports:
-      - 8081:8081
-    environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: root
-      ME_CONFIG_MONGODB_ADMINPASSWORD: example
-      ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
+      - ./app:/var/www/app
+    command: bash -c "npm install && npm run dev"
