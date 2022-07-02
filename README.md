@@ -28,4 +28,4 @@ $ docker build -t application .
 $ docker run -it -p 3000:3000 application
 ```
 
-For detailed explanation on how things work with Docker, check out this [guide]([https://nuxtjs.org](https://dockerize.io/guides/docker-nuxtjs-guide)).
+For detailed explanation on how things work with Docker, check out this [documentation](https://dockerize.io/guides/docker-nuxtjs-guide).
