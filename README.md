@@ -22,9 +22,10 @@ For detailed explanation on how things work with Node.js , check out [documentat
 *It's Docker, Baby!*
 
 ```bash
-
+# build the docker image
 $ docker build -t application .
 
+# run the application image with port 3000
 $ docker run -it -p 3000:3000 application
 ```
 
