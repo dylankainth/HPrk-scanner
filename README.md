@@ -21,7 +21,7 @@ For detailed explanation on how things work with Node.js , check out [documentat
 ## Build setup with Docker
 *It's Docker, Baby!*
 
-[image](https://alphaville.github.io/optimization-engine/img/docker.gif)
+![image](https://alphaville.github.io/optimization-engine/img/docker.gif)
 
 ```bash
 # build the docker image
