@@ -2,6 +2,8 @@
 
 ## Build Setup with Node.js
 
+![image](https://media2.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif?cid=6c09b952801f8d0035a8926a5d7d8e50a6ffb0cd377f8b06&rid=giphy.gif&ct=s)
+
 ```bash
 # install dependencies
 $ yarn install
